@@ -1,4 +1,7 @@
 {
+    "auxmoney/opentracing-bundle-zipkin": {
+        "version": "v1.2.2"
+    },
     "doctrine/annotations": {
         "version": "2.0",
         "recipe": {

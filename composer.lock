@@ -4,8 +4,215 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbfc50a6fe96779a2569cacf337f4c2a",
+    "content-hash": "da303621bdd6cdc6550177cf4eea0cb6",
     "packages": [
+        {
+            "name": "auxmoney/opentracing-bundle-core",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auxmoney/OpentracingBundle-core.git",
+                "reference": "37c5ace4ea09dcdf82c452595254ae83846bd319"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auxmoney/OpentracingBundle-core/zipball/37c5ace4ea09dcdf82c452595254ae83846bd319",
+                "reference": "37c5ace4ea09dcdf82c452595254ae83846bd319",
+                "shasum": ""
+            },
+            "require": {
+                "composer/package-versions-deprecated": "^1.11.99",
+                "ext-json": "*",
+                "opentracing/opentracing": "^1.0.1",
+                "php": "^7.4|^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-message": "^1.0",
+                "psr/log": "^1.1|^2.0|^3.0",
+                "symfony/config": "^4.4|^5.4|^6.0",
+                "symfony/console": "^4.4|^5.4|^6.0",
+                "symfony/dependency-injection": "^4.4|^5.4|^6.0",
+                "symfony/http-kernel": "^4.4|^5.4|^6.0",
+                "symfony/yaml": "^4.4|^5.4|^6.0"
+            },
+            "require-dev": {
+                "mtdowling/jmespath.php": "^2.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpmd/phpmd": "^2.12",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^1.1",
+                "phpunit/phpunit": "^9.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/filesystem": "*",
+                "symfony/process": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Auxmoney\\OpentracingBundle\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony Opentracing bundle to easily enable distributed tracing",
+            "keywords": [
+                "Guzzle",
+                "auxmoney",
+                "distributed-tracing",
+                "jaeger",
+                "monolog",
+                "opentracing",
+                "opentracing-bundle",
+                "psr-18",
+                "symfony",
+                "symfony-bundle",
+                "zipkin"
+            ],
+            "support": {
+                "issues": "https://github.com/auxmoney/OpentracingBundle-core/issues",
+                "source": "https://github.com/auxmoney/OpentracingBundle-core/tree/v1.3.0"
+            },
+            "time": "2022-08-25T10:22:03+00:00"
+        },
+        {
+            "name": "auxmoney/opentracing-bundle-zipkin",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auxmoney/OpentracingBundle-Zipkin.git",
+                "reference": "ad1d55afa304c1ac067f4f42f4ac7da97a87963b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auxmoney/OpentracingBundle-Zipkin/zipball/ad1d55afa304c1ac067f4f42f4ac7da97a87963b",
+                "reference": "ad1d55afa304c1ac067f4f42f4ac7da97a87963b",
+                "shasum": ""
+            },
+            "require": {
+                "auxmoney/opentracing-bundle-core": "^1.0",
+                "ext-json": "*",
+                "jcchavezs/zipkin-opentracing": "^2.0",
+                "opentracing/opentracing": "^1.0.1",
+                "php": "^7.4|^8.0"
+            },
+            "replace": {
+                "auxmoney/opentracing-bundle-tracer-implementation": "*"
+            },
+            "require-dev": {
+                "mtdowling/jmespath.php": "^2.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpmd/phpmd": "^2.12",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^9.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/filesystem": "*",
+                "symfony/process": "*",
+                "symfony/yaml": "*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Auxmoney\\OpentracingBundle\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony Opentracing bundle extension for Zipkin tracers",
+            "keywords": [
+                "auxmoney",
+                "distributed-tracing",
+                "opentracing",
+                "opentracing-bundle",
+                "psr-18",
+                "symfony",
+                "symfony-bundle",
+                "zipkin"
+            ],
+            "support": {
+                "issues": "https://github.com/auxmoney/OpentracingBundle-Zipkin/issues",
+                "source": "https://github.com/auxmoney/OpentracingBundle-Zipkin/tree/v1.2.2"
+            },
+            "time": "2022-08-23T06:06:36+00:00"
+        },
+        {
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "b4f54f74ef3453349c24a845d22392cd31e65f1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/b4f54f74ef3453349c24a845d22392cd31e65f1d",
+                "reference": "b4f54f74ef3453349c24a845d22392cd31e65f1d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "support": {
+                "issues": "https://github.com/composer/package-versions-deprecated/issues",
+                "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.5"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-17T14:14:24+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "2.0.1",
@@ -1459,6 +1666,63 @@
             "time": "2023-01-14T14:17:03+00:00"
         },
         {
+            "name": "jcchavezs/zipkin-opentracing",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jcchavezs/zipkin-php-opentracing.git",
+                "reference": "cf8488f571e8e8814f85afd09a0ef8ccc7c907be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jcchavezs/zipkin-php-opentracing/zipball/cf8488f571e8e8814f85afd09a0ef8ccc7c907be",
+                "reference": "cf8488f571e8e8814f85afd09a0ef8ccc7c907be",
+                "shasum": ""
+            },
+            "require": {
+                "opentracing/opentracing": "^1.0.1",
+                "openzipkin/zipkin": "3.0.0",
+                "php": ">=7.4 || ^8.0"
+            },
+            "provide": {
+                "opentracing/opentracing": "1.0.0"
+            },
+            "require-dev": {
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^0.12.26",
+                "phpunit/phpunit": "^9.0",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipkinOpenTracing\\": "./src/ZipkinOpenTracing/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                }
+            ],
+            "description": "A Zipkin bridge with OpenTracing",
+            "support": {
+                "issues": "https://github.com/jcchavezs/zipkin-php-opentracing/issues",
+                "source": "https://github.com/jcchavezs/zipkin-php-opentracing/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/jcchavezs",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2023-02-26T18:55:33+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.3.1",
             "source": {
@@ -1558,6 +1822,131 @@
                 }
             ],
             "time": "2023-02-06T13:46:10+00:00"
+        },
+        {
+            "name": "opentracing/opentracing",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opentracing/opentracing-php.git",
+                "reference": "cd60bd1fb2a25280600bc74c7f9e0c13881a9116"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opentracing/opentracing-php/zipball/cd60bd1fb2a25280600bc74c7f9e0c13881a9116",
+                "reference": "cd60bd1fb2a25280600bc74c7f9e0c13881a9116",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "~0.12",
+                "phpunit/phpunit": "^7.0 || ^9.0",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/OpenTracing/Tags.php",
+                    "src/OpenTracing/Formats.php"
+                ],
+                "psr-4": {
+                    "OpenTracing\\": "src/OpenTracing/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                }
+            ],
+            "description": "OpenTracing API for PHP",
+            "support": {
+                "issues": "https://github.com/opentracing/opentracing-php/issues",
+                "source": "https://github.com/opentracing/opentracing-php/tree/1.0.2"
+            },
+            "time": "2022-01-27T19:59:21+00:00"
+        },
+        {
+            "name": "openzipkin/zipkin",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openzipkin/zipkin-php.git",
+                "reference": "d981ecfbe77a3dd430732575474eceb53e38f26a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openzipkin/zipkin-php/zipball/d981ecfbe77a3dd430732575474eceb53e38f26a",
+                "reference": "d981ecfbe77a3dd430732575474eceb53e38f26a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^7.4 || ^8.0",
+                "psr/http-message": "~1.0",
+                "psr/log": "^1.0 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "ext-mysqli": "*",
+                "jcchavezs/httptest": "~0.2",
+                "middlewares/fast-route": "^2.0",
+                "middlewares/request-handler": "^2.0",
+                "nyholm/psr7": "^1.4",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^0.12.26",
+                "phpunit/phpunit": "~9",
+                "psr/http-client": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "suggest": {
+                "ext-mysqli": "Allows to use mysqli instrumentation.",
+                "psr/http-client": "Allows to instrument HTTP clients following PSR18.",
+                "psr/http-server-middleware": "Allows to instrument HTTP servers via middlewares following PSR15."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "./src/Zipkin/Propagation/Id.php",
+                    "./src/Zipkin/Timestamp.php",
+                    "./src/Zipkin/Kind.php",
+                    "./src/Zipkin/Tags.php",
+                    "./src/Zipkin/Annotations.php",
+                    "./src/Zipkin/SpanName.php"
+                ],
+                "psr-4": {
+                    "Zipkin\\": "./src/Zipkin/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                }
+            ],
+            "description": "A Zipkin instrumentation for PHP",
+            "homepage": "https://github.com/openzipkin/zipkin-php",
+            "keywords": [
+                "distributed-tracing",
+                "openzipkin",
+                "tracing",
+                "zipkin"
+            ],
+            "support": {
+                "issues": "https://github.com/openzipkin/zipkin-php/issues",
+                "source": "https://github.com/openzipkin/zipkin-php/tree/3.0.0"
+            },
+            "time": "2021-11-18T09:03:17+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1923,6 +2312,111 @@
                 "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
             "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/master"
+            },
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/link",
