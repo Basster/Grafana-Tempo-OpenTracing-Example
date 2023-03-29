@@ -2,6 +2,8 @@
 
 This is a simple example of how to use Grafana Tempo with OpenTracing in a simple Symfony app.
 
+Most of the Docker Compose setup is taken from <https://github.com/grafana/tempo/tree/main/example/docker-compose>.
+
 ## Requirements
 
 * Docker
@@ -13,7 +15,7 @@ This is a simple example of how to use Grafana Tempo with OpenTracing in a simpl
 
 * Clone this repo
 * Run `composer install`
-* Run `docker-compose up -d`
+* Run `docker compose up -d`
 * Run `symfony serve`
 * Open [`http://localhost:8000`](http://localhost:8000) in your browser to access the [Symfony app](./src/Controller/HelloAction.php).
   * Open [`http://localhost:8000/slow`](http://localhost:8000/slow) in your browser to access [a time-consuming endpoint](./src/Controller/SlowAction.php).
